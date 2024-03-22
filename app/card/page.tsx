@@ -3,7 +3,7 @@ import Image from "next/image";
 
 interface CardProps {
     title: string;
-    price: string; // Se o preço for um número, altere para number
+    price: string;
     imageUrl: string;
     imageAlt: string;
 }

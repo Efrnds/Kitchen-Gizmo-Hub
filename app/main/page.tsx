@@ -3,27 +3,6 @@ import Link from "next/link";
 import Card from "../card/page";
 
 const Home = () => {
-    const cardProps1 = {
-        title: "Frigideira antiaderente",
-        price: "R$ 342,60",
-        imageUrl: "/img/frigideira.jpg",
-        imageAlt: "Frigideira de cerâmica",
-    };
-
-    const cardProps2 = {
-        title: "Kit 12 utensílios de silicone",
-        price: "R$ 213,00",
-        imageUrl: "/img/kit 12 untesilios.jpg",
-        imageAlt: "Kit com 12 utensílios de silicone",
-    };
-
-    const cardProps3 = {
-        title: "Potes de condimentos",
-        price: "R$ 149,99",
-        imageUrl: "/img/potes.jpg",
-        imageAlt: "Potes de condimentos para utilização na cozinha",
-    };
-
     return (
         <div className="p-4 mx-20">
             <section className="flex">
@@ -65,10 +44,39 @@ const Home = () => {
             </div>
             <hr className="mb-8 mt-1 border-slate-200" />
             <div className="flex justify-center gap-5 flex-wrap">
-                <Card {...cardProps1} />
-                <Card {...cardProps2} />
-                <Card {...cardProps3} />
-                <Card {...cardProps1} />
+                <Card
+                    {...{
+                        title: "Frigideira antiaderente",
+                        price: "R$ 342,60",
+                        imageUrl: "/img/frigideira.jpg",
+                        imageAlt: "Frigideira de cerâmica",
+                    }}
+                />
+                <Card
+                    {...{
+                        title: "Kit 12 utensílios de silicone",
+                        price: "R$ 213,00",
+                        imageUrl: "/img/kit 12 untesilios.jpg",
+                        imageAlt: "Kit com 12 utensílios de silicone",
+                    }}
+                />
+                <Card
+                    {...{
+                        title: "Potes de condimentos",
+                        price: "R$ 149,99",
+                        imageUrl: "/img/potes.jpg",
+                        imageAlt:
+                            "Potes de condimentos para utilização na cozinha",
+                    }}
+                />
+                <Card
+                    {...{
+                        title: "Frigideira antiaderente",
+                        price: "R$ 342,60",
+                        imageUrl: "/img/frigideira.jpg",
+                        imageAlt: "Frigideira de cerâmica",
+                    }}
+                />
             </div>
         </div>
     );
