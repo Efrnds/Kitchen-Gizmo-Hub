@@ -8,24 +8,24 @@ const Home = () => {
         <div className="p-4 mx-20">
             <section className={`flex ${style.section}`}>
                 <Image
-                    className="w-1/2"
+                    className="lg:w-1/2"
                     src="/img/banner.jpg"
                     width={1920}
                     height={1080}
                     alt="Banner da loja"
                 />
-                <div className="w-1/2 bg-white pl-5 flex flex-col ">
+                <div className="lg:w-1/2 bg-white pl-5 flex flex-col">
                     <div className="my-auto flex flex-col gap-3 ">
                         <h3 className="font-bold text-xl  text-red-600 font-mono">
                             POR TEMPO LIMITADO
                         </h3>
                         <p className="text-stone-600">
-                            Ai por tempo limitado veja essa categoria de
+                            Por tempo limitado veja essa categoria de
                             produtos na promoção
                         </p>
                         <Link
                             href="#"
-                            className="bg-black w-fit text-slate-100 p-1.5 font-bold border border-black transition hover:border-red-600 hover:text-red-600"
+                            className="bg-black md:w-fit text-slate-100 p-1.5 font-bold border border-black transition hover:border-red-600 hover:text-red-600"
                         >
                             COMPRAR AGORA
                         </Link>
