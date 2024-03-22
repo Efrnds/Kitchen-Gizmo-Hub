@@ -1,7 +1,8 @@
 import Image from "next/image";
 import Link from "next/link";
 import Card from "../card/page";
-export default function Home() {
+
+const Home = () => {
     const cardProps1 = {
         title: "Frigideira antiaderente",
         price: "R$ 342,60",
@@ -71,4 +72,5 @@ export default function Home() {
             </div>
         </div>
     );
-}
+};
+export default Home;
