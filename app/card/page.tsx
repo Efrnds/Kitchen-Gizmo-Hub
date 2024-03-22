@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Image from "next/image";
 
-export default function Card({ title, price, imageUrl, imageAlt }) {
+function Card({ title, price, imageUrl, imageAlt }) {
     return (
         <Link href="" className="p-4 w-96 h-2/3">
             <Image
@@ -19,3 +19,5 @@ export default function Card({ title, price, imageUrl, imageAlt }) {
         </Link>
     );
 }
+
+export default Card();
