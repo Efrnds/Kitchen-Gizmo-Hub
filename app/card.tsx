@@ -1,14 +1,8 @@
 import Link from "next/link";
 import Image from "next/image";
 
-interface CardProps {
-    title: string;
-    price: string;
-    imageUrl: string;
-    imageAlt: string;
-}
 
-const Card: React.FC<CardProps> = ({ title, price, imageUrl, imageAlt }) => {
+function Card({ title = "", price = "", imageUrl = "", imageAlt = ""}) {
     return (
         <Link href="" passHref>
             <a className="p-4 w-96 h-fit items-center flex flex-col rounded-sm shadow-sm bg-white">

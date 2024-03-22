@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import Card from "../card/page";
+import Card from "../card";
 
 const Home = () => {
     return (
@@ -45,37 +45,28 @@ const Home = () => {
             <hr className="mb-8 mt-1 border-slate-200" />
             <div className="flex justify-center gap-5 flex-wrap">
                 <Card
-                    {...{
-                        title: "Frigideira antiaderente",
-                        price: "R$ 342,60",
-                        imageUrl: "/img/frigideira.jpg",
-                        imageAlt: "Frigideira de cerâmica",
-                    }}
+                    title="Frigideira antiaderente"
+                    price="R$ 342,60"
+                    imageUrl="/img/frigideira.jpg"
+                    imageAlt="Frigideira de cerâmica"
                 />
                 <Card
-                    {...{
-                        title: "Kit 12 utensílios de silicone",
-                        price: "R$ 213,00",
-                        imageUrl: "/img/kit 12 untesilios.jpg",
-                        imageAlt: "Kit com 12 utensílios de silicone",
-                    }}
+                    title="Kit 12 utensílios de silicone"
+                    price="R$ 213,00"
+                    imageUrl="/img/kit 12 untesilios.jpg"
+                    imageAlt="Kit com 12 utensílios de silicone"
                 />
                 <Card
-                    {...{
-                        title: "Potes de condimentos",
-                        price: "R$ 149,99",
-                        imageUrl: "/img/potes.jpg",
-                        imageAlt:
-                            "Potes de condimentos para utilização na cozinha",
-                    }}
+                    title="Potes de condimentos"
+                    price="R$ 149,99"
+                    imageUrl="/img/potes.jpg"
+                    imageAlt="Potes de condimentos para utilização na cozinha"
                 />
                 <Card
-                    {...{
-                        title: "Frigideira antiaderente",
-                        price: "R$ 342,60",
-                        imageUrl: "/img/frigideira.jpg",
-                        imageAlt: "Frigideira de cerâmica",
-                    }}
+                    title="Frigideira antiaderente"
+                    price="R$ 342,60"
+                    imageUrl="/img/frigideira.jpg"
+                    imageAlt="Frigideira de cerâmica"
                 />
             </div>
         </div>
