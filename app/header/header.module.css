@@ -1,0 +1,18 @@
+.hambmenu {
+    display: none;
+}
+@media (max-width: 768px) {
+    .navbar {
+        display: none;
+    }
+}
+
+@media (max-width: 1366px) {
+    .searchbar {
+        display: none;
+    }
+
+    .hambmenu {
+        display: flex;
+    }
+}
